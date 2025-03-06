@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Douglas Campbell" />
+    <meta name="description" content="A simple text repeater" />
     <title>Echo</title>
     <script src="repeat.js" type="module"></script>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
@@ -15,18 +17,22 @@
     />
   </head>
   <body>
-    <h1>The Repeater</h1>
+    <header>
+      <h1>The Repeater</h1>
+    </header>
 
-    <div class="prompt">
-      <br /><br />
-      <p>
-        Enter a text into the box below and click on enter. I will repeat what
-        you typed.
-      </p>
-      <input type="text" name="userInput" id="userInput" class="userInput" />
-      <br /><br />
-      <input type="button" value="Repeat!" class="submit" id="submit" />
-    </div>
-    <div class="result" id="result"></div>
+    <main>
+      <div class="prompt">
+        <br /><br />
+        <p>
+          Enter a text into the box below and click on enter. I will repeat what
+          you typed.
+        </p>
+        <input type="text" name="userInput" id="userInput" class="userInput" />
+        <br /><br />
+        <input type="button" value="Repeat!" class="submit" id="submit" />
+      </div>
+      <div class="result" id="result"></div>
+    </main>
   </body>
 </html>
