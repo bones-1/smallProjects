@@ -2,18 +2,19 @@
 
 let input = document.getElementById("userInput");
 let button = document.getElementById("submit");
-let result;
+let result = document.getElementById("result");
 
 button.addEventListener("click", () => {
-  if (!result) {
-    result = document.createElement("p");
-    result.style.backgroundColor = "grey";
-  }
+  // if (result.innerText = "") {
+  //   result = document.createElement("p");
+  //   // result.style.backgroundColor = "grey";
+  // }
 
   if (input.value == "") {
     result.innerText = "Nothing was entered!";
   } else {
-    result.innerText = "You entered: " + input.value;
+    result.innerHTML = "You entered: <br><span class='result-text'></span>";
+    result.querySelector('.result-text').innerText = input.value;
   }
 
   input.value = "";
