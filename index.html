@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echo</title>
     <script src="repeat.js" defer></script>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1>The Repeater</h1>
-    <br><br>
-    <p>Enter a text into the box below and click on enter. I will repeat what you typed.</p>
-    <input type="text" name="userInput" id="userInput" class="userInput"> <br><br>
-    <input type="button" value="Repeat!" class="submit" id="submit">
-</body>
+
+    <div class="prompt">
+      <br /><br />
+      <p>
+        Enter a text into the box below and click on enter. I will repeat what
+        you typed.
+      </p>
+      <input type="text" name="userInput" id="userInput" class="userInput" />
+      <br /><br />
+      <input type="button" value="Repeat!" class="submit" id="submit" />
+    </div>
+    <div class="result" id="result"></div>
+  </body>
 </html>

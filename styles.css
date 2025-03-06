@@ -1,0 +1,68 @@
+:root,
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --top-spacing: 20px;
+}
+
+body {
+  background-color: #eee;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1ch;
+}
+
+h1,
+.prompt,
+.result {
+  margin: 0 auto;
+  width: fit-content;
+  /* border: solid red 1px; */
+}
+
+.prompt {
+  padding: 0 5px;
+  margin-top: var(--top-spacing);
+}
+
+.userInput,
+.submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit {
+  margin-bottom: var(--top-spacing);
+  width: 100px;
+  height: 30px;
+
+  background-color: silver;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  box-shadow: lightgray 0 0 3px 3px;
+}
+
+.result {
+  min-width: 400px;
+  height: fit-content;
+}
+
+.result-text {
+  background-color: #dadada;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-style: italic;
+}
