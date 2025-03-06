@@ -9,11 +9,12 @@ button.addEventListener("click", () => {
     result.innerText = "Nothing was entered!";
     new Audio("./media/radar-ping-306440.mp3").play();
   } else {
+    //Result was entered in two stages in order to prevent Cross-Site Scripting (XSS) attacks
     result.innerHTML = "You entered: <br><span class='result-text'></span>";
     result.querySelector(".result-text").innerText = input.value;
+    
     new Audio("./media/ping-82822.mp3").play();
   }
 
   input.value = "";
-  document.body.insertAdjacentElement("beforeend", result);
 });
